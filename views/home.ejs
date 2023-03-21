@@ -8,6 +8,39 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    This Page is loaded
+    <div id="main-div">
+        <div class="divborder width100"> <h1 style="text-align: center;">TODO App</h1></div>
+      <form action="/" method="POST"></form>
+      <div class="divborder width100 divHeightmid">
+        <label for="description" >Description</label>
+        <input type="text" placeholder="What do you need to do?" id="description" class="noborder width100">
+      </div>
+      <div class="divborder width50 divHeightmid">
+        <label for="category">Category</label>
+        <select name="category" id="category" class="noborder width100">
+          <option value="Personal">Choose a Category</option>
+          <option value="Personal">Personal</option>
+          <option value="Work">Work</option>
+          <option value="School">School</option>
+          <option value="Cleaning">Cleaning</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="divborder width50 divHeightmid">
+        <label for="duedate">Due Date</label>
+        <input type="date" placeholder="What do you need to do?" id="duedate" class="noborder width100" >
+      </div>
+      <div class="divborder width100 divHeightbutton">
+        <button type="button" style="margin-right: 10px;"><i class="fa-solid fa-plus"></i> ADD TASK</button>
+        <button type="button"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
+      </div>
+                    <p >
+                        <input type="checkbox" name="" id="" style="display:inline;">
+                        Test
+
+                    </p>
+   
+    </div>
+    <script src="https://kit.fontawesome.com/4286c095cf.js" crossorigin="anonymous"></script>
 </body>
 </html>

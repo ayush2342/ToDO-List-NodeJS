@@ -1,4 +1,59 @@
 body
 {
-    text-align: center;
+    background-color: #808080;
+}
+
+#main-div
+{
+    background-color: #FFFFFF;
+    width: 55%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+.divHeightmid
+{
+    height: 10vh;
+}
+
+.divHeightbutton
+{
+    height: 12vh;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+}
+
+label
+{
+    display: block;
+}
+
+.width100
+{
+    width: 100%;
+}
+
+.width50
+{
+    width: 46%;
+}
+
+.divborder
+{
+border-bottom: 1px solid black;
+padding: 2%;
+}
+
+.noborder
+{
+    border: none;
+
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }

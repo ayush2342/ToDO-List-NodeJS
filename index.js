@@ -3,10 +3,14 @@ const port = 8080;
 const app= express();
 const db = require('./config/mongoose')
 
-
 app.set('view engine','ejs');
 app.set('views','./views')
 app.use(express.static('./views/assets'))
+
+app.get('/',function(req,res)
+{
+res.render('home')
+})
 
 app.listen(port,function(error)
 {
