@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div id="main-div">
-        <div class="divborder width100"> <h1 style="text-align: center;">TODO App</h1></div>
-      <form action="/" method="POST"></form>
-      <div class="divborder width100 divHeightmid">
-        <label for="description" >Description</label>
-        <input type="text" placeholder="What do you need to do?" id="description" class="noborder width100">
+    <div class="main-div">
+      <div class="headingDiv">
+        <h1>TODO App</h1>
       </div>
-      <div class="divborder width50 divHeightmid">
-        <label for="category">Category</label>
-        <select name="category" id="category" class="noborder width100">
+          
+
+      <form action="/" method="POST"></form>
+
+      <div class="descriptionDiv borderTop">
+        <label for="description" >Description</label>
+        <input type="text" name="description" placeholder="What do you need to do?" id="description">
+
+      </div>
+
+      <div class="categoryDiv borderTop">
+        <label for="category" class="otherColumnStyle">Category</label>
+        <select name="category" id="category" class="otherColumnStyle">
           <option value="Personal">Choose a Category</option>
           <option value="Personal">Personal</option>
           <option value="Work">Work</option>
@@ -26,20 +33,28 @@
           <option value="Other">Other</option>
         </select>
       </div>
-      <div class="divborder width50 divHeightmid">
-        <label for="duedate">Due Date</label>
-        <input type="date" placeholder="What do you need to do?" id="duedate" class="noborder width100" >
-      </div>
-      <div class="divborder width100 divHeightbutton">
-        <button type="button" style="margin-right: 10px;"><i class="fa-solid fa-plus"></i> ADD TASK</button>
-        <button type="button"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
-      </div>
-                    <p >
-                        <input type="checkbox" name="" id="" style="display:inline;">
-                        Test
 
-                    </p>
-   
+        <div class="dueDateDiv borderTop">
+          <label for="duedate" >Due Date</label>
+          <input type="date" name="duedate" placeholder="What do you need to do?" id="duedate">
+        </div>
+        
+     <div class="buttonDiv borderTop">
+  
+      <button type="submit" class="add-task"><i class="fa-solid fa-plus"></i> ADD TASK </button>
+      <button type="submit" class="delete-task"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
+     </div>
+       
+
+     <div class="listDiv">
+        <input type="checkbox" name="" id=""> 
+
+        <p>
+          Why  not Add a task? <br>
+          <i class="fa-solid fa-calendar-days"></i>
+      </p> 
+     </div>
+
     </div>
     <script src="https://kit.fontawesome.com/4286c095cf.js" crossorigin="anonymous"></script>
 </body>

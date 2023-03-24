@@ -1,59 +1,106 @@
 body
 {
     background-color: #808080;
+    
 }
 
-#main-div
+.main-div
 {
     background-color: #FFFFFF;
     width: 55%;
     height: auto;
     margin: auto;
+    font-size: large;
     display: flex;
     flex-wrap: wrap;
-    font-size: large;
+    color:#727272; 
+    
 }
-
-.divHeightmid
-{
-    height: 10vh;
-}
-
-.divHeightbutton
-{
-    height: 12vh;
-    align-items: center;
-    display: flex;
-    justify-content:center;
-}
-
-label
-{
+.main-div label{
     display: block;
+    width: 100%;
+    color: #444444;
+}
+.borderTop
+{
+    border-top: 1px solid #8A898B;
 }
 
-.width100
+.headingDiv
 {
     width: 100%;
+    text-align: center;
+}
+.descriptionDiv
+{
+    padding:2%;
 }
 
-.width50
+
+.descriptionDiv,.main-div input,.categoryDiv select
+{
+ width: 100%;
+}
+
+
+.categoryDiv,.dueDateDiv
 {
     width: 46%;
+    padding:2%;
 }
 
-.divborder
+.buttonDiv
 {
-border-bottom: 1px solid black;
-padding: 2%;
+    width: 100%;
+    text-align: center;
+    padding: 3% 0% 3% 0% ;
 }
 
-.noborder
+.buttonDiv button
 {
-    border: none;
-
+ height: 3rem;
+ color: white;
+ border:none;
 }
 
-input:focus, textarea:focus, select:focus{
+.add-task
+{
+background-color: #444444;
+padding:0% 3% 0% 3%;
+margin-right: 2%;
+}
+
+.delete-task
+{
+background-color: #E6332D;
+padding:0% 1% 0% 1%;
+}
+
+input:focus, select:focus ,input ,select
+{
     outline: none;
+    border: none;
+    color:#8A898B;
 }
+
+.listDiv
+{
+    width: 100%;
+    margin: 0% 3% 0% 3%;
+    border-top: 1px solid #8A898B;
+}
+
+.listDiv input
+{
+    width: 2%;
+    position: relative;
+    bottom: 20px;
+}
+
+.listDiv p
+{
+    display: inline-block;
+}
+
+
+
