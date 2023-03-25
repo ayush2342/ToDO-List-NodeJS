@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%=title%></title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -14,8 +14,7 @@
       </div>
           
 
-      <form action="/" method="POST"></form>
-
+      <form action="/create-task" method="POST">
       <div class="descriptionDiv borderTop">
         <label for="description" >Description</label>
         <input type="text" name="description" placeholder="What do you need to do?" id="description">
@@ -40,21 +39,29 @@
         </div>
         
      <div class="buttonDiv borderTop">
-  
       <button type="submit" class="add-task"><i class="fa-solid fa-plus"></i> ADD TASK </button>
+     </div>
+    </form>
+
+    <form action="/delete-task" method="POST">
       <button type="submit" class="delete-task"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
-     </div>
-       
+      <% for(let i of taskList){%>
+        <div class="listDiv">
+           <input type="checkbox" name="taskid" id="<%= i.id%>" value="<%= i.id%>"> 
+           <label for="<%= i.id%>">
+            <p>
+              <%= i.description%> <br>
+            <i class="fa-solid fa-calendar-days"></i>  <%= i.duedate%>
+            </p> 
+            <img src="images/<%=i.category%>.png" alt="No Image">
+          </label>
+        </div>
+       <%}%>
 
-     <div class="listDiv">
-        <input type="checkbox" name="" id=""> 
+    </form>
 
-        <p>
-          Why  not Add a task? <br>
-          <i class="fa-solid fa-calendar-days"></i>
-      </p> 
-     </div>
 
+      
     </div>
     <script src="https://kit.fontawesome.com/4286c095cf.js" crossorigin="anonymous"></script>
 </body>
